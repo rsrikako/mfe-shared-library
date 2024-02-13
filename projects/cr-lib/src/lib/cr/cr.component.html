@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="card p-3">
+    <div class="row">
+      <div class="col-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+      <div class="col-6">
+        <label for="crNum" class="form-label">Change Request Number</label>
+        <input type="text" class="form-control" id="crNum" />
+      </div>
+      <div class="col-6">
+        <label for="changeType" class="form-label">Change Type</label>
+        <input type="text" class="form-control" id="changeType" />
+      </div>
+      <div class="col-6">
+        <label for="reqDivision" class="form-label">Requesting Division</label>
+        <input type="text" class="form-control" id="reqDivision" />
+      </div>
+    </div>
+  </div> 
+  <div *ngIf = "isNew" class="text-center m-2">
+    <button class="btn btn-primary">Submit</button>
+  </div>
+</div>
